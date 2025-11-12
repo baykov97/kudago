@@ -1,4 +1,4 @@
-# KudaGo Events Platform
+# https://kudago-blue.vercel.app/
 
 Профессиональное веб-приложение для просмотра событий из [KudaGo API](https://docs.kudago.com/api/) с полной поддержкой Server-Side Rendering (SSR), SEO-оптимизацией и мультигородской архитектурой. Построено на **Nuxt 4** с использованием современных практик разработки.
 
