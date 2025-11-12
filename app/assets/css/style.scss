@@ -1,0 +1,16 @@
+@use "base/fonts";
+@use "base/variables";
+@use "base/reboot";
+
+@use "components/header";
+@use "components/events";
+body {
+  color: var(--color-text-primary);
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--container-padding);
+}

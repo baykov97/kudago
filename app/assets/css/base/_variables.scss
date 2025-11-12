@@ -1,0 +1,12 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --f-size-base: 16px;
+  --line-height-base: 1.2;
+  --color-text-primary: var(--black);
+  --margin-section: 40px;
+  --container-padding: 12px;
+  @media (min-width: 1024px) {
+    --container-padding: 40px;
+  }
+}

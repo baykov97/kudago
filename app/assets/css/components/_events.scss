@@ -1,0 +1,61 @@
+@use "../base/mixins" as *;
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.event {
+  &-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+  }
+  &-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  &-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  &-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    @include clamp-lines(2);
+  }
+  &-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    min-width: 2.4em;
+  }
+  &-venue {
+    color: #95a5a6;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  &-description {
+    color: #555;
+    margin-bottom: 1rem;
+    @include clamp-lines(4);
+  }
+}
